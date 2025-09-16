@@ -1,8 +1,15 @@
+import React from 'react';
+import Map from '../components/Map';
 
-function MapPage() {
+const MapPage: React.FC = () => {
   return (
-    <div>MapPage</div>
-  )
-}
+    <div className="p-6">
+      <h1 className="text-3xl font-bold">Map View</h1>
+      <p className="mt-4">Here, you can visualize the geotracks on the map and view the heatmaps of popular routes.</p>
+      {/* Render the Map component */}
+      <Map />
+    </div>
+  );
+};
 
-export default MapPage
+export default MapPage;
