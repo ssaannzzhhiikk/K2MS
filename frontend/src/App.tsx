@@ -1,14 +1,15 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Dashboard from './pages/Dashboard'
-import MapPage from './pages/MapPage'
-import AnalyticsPage from './pages/AnalyticsPage'
+// /src/App.tsx
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import MapPage from './pages/MapPage';
+import AnalyticsPage from './pages/AnalyticsPage';
 import './App.css'
 
-function App() {
-
+const App: React.FC = () => {
   return (
     <Router>
-        <div className="App">
+      <div className="App">
         <nav className="p-4 bg-blue-600 text-white">
           <ul className="flex space-x-4">
             <li><a href="/">Dashboard</a></li>
@@ -24,7 +25,7 @@ function App() {
         </Routes>
       </div>
     </Router>
-  )
-}
+  );
+};
 
-export default App
+export default App;
